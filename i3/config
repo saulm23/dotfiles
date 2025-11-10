@@ -179,13 +179,13 @@ bar {
 }
 ##MIS MODIFICACIONES
 #status
-exec --no-startup-id i3status -c ~/.dotfiles/i3/i3status.conf
+exec --no-startup-id i3status -c ~/dotfiles/i3status/config
 #brightness
 bindsym XF86MonBrightnessUp exec brightnessctl set +10% 
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 #grayscale
-exec picom --backend glx --window-shader-fg ~/.dotfiles/picom/grayscale.glsl
-bindsym $mod+g exec picom --backend glx --window-shader-fg ~/.dotfiles/picom/grayscale.glsl 
+exec picom --backend glx --window-shader-fg ~/dotfiles/picom/grayscale.glsl
+bindsym $mod+g exec picom --backend glx --window-shader-fg ~/dotfiles/picom/grayscale.glsl 
 #gaps
 #gaps inner 10px
 #gaps outer 10px
@@ -194,7 +194,9 @@ bindsym $mod+g exec picom --backend glx --window-shader-fg ~/.dotfiles/picom/gra
 default_border pixel
 #touchpad
 bindsym $mod+t exec --no-startup-id xinput disable $(xinput | grep Touchpad | grep -o 'id=[0-9]*' | cut -d= -f2) 
+bindsym $mod+Shift+t exec --no-startup-id xinput disable $(xinput | grep TrackPoint | grep -o 'id=[0-9]*' | cut -d= -f2) 
 exec --no-startup-id xinput disable $(xinput | grep Touchpad | grep -o 'id=[0-9]*' | cut -d= -f2)
+exec --no-startup-id xinput disable $(xinput | grep TrackPoint | grep -o 'id=[0-9]*' | cut -d= -f2)
 #app shortchuts
 bindsym $mod+z exec zathura ~/sss/aops1F.pdf
 bindsym $mod+o exec i3lock 
