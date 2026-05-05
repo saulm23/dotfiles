@@ -1,4 +1,0 @@
-exec i3 && 
-exec i3status -c ~/dotfiles/i3status/config &&
-exec unclutter
-
