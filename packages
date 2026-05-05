@@ -21,4 +21,6 @@ pipewire-alsa
 pipewire-pulse
 pipewire-jack
 sof-firmware
-texlive
+unzip
+xclip
+openssh

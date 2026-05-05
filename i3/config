@@ -196,7 +196,7 @@ default_border pixel
 bindsym $mod+t exec --no-startup-id xinput disable $(xinput | grep Touchpad | grep -o 'id=[0-9]*' | cut -d= -f2) 
 bindsym $mod+Shift+t exec --no-startup-id xinput disable $(xinput | grep TrackPoint | grep -o 'id=[0-9]*' | cut -d= -f2) 
 exec --no-startup-id xinput disable $(xinput | grep Touchpad | grep -o 'id=[0-9]*' | cut -d= -f2)
-exec --no-startup-id xinput disable $(xinput | grep TrackPoint | grep -o 'id=[0-9]*' | cut -d= -f2)
+#exec --no-startup-id xinput disable $(xinput | grep TrackPoint | grep -o 'id=[0-9]*' | cut -d= -f2)
 #app shortchuts
 bindsym $mod+z exec zathura ~/sss/aops1F.pdf
 bindsym $mod+o exec i3lock 
