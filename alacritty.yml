@@ -1,58 +1,58 @@
-# ~/.config/alacritty/alacritty.yml
+# ~/.config/alacritty/alacritty.toml
 
-window:
-  padding:
-    x: 12
-    y: 12
-  opacity: 0.92
-  decorations: full
+[window]
+padding.x = 12
+padding.y = 12
+opacity = 0.92
+decorations = "Full"
 
-font:
-  normal:
-    family: "JetBrains Mono"
-    style: Regular
-  bold:
-    family: "JetBrains Mono"
-    style: Bold
-  italic:
-    family: "JetBrains Mono"
-    style: Italic
-  size: 12.5
+[font]
+size = 12.5
 
-cursor:
-  style:
-    shape: Block
-    blinking: On
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
 
-colors:
-  primary:
-    background: "#111214"   # deep graphite
-    foreground: "#d0d0d0"   # soft light gray
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
 
-  cursor:
-    text: "#111214"
-    cursor: "#b0b0b0"
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
 
-  selection:
-    text: "#111214"
-    background: "#4a4a4a"
+[cursor]
+style.shape = "Block"
+style.blinking = "On"
 
-  normal:
-    black:   "#1a1b1e"
-    red:     "#5a5a5a"
-    green:   "#6a6a6a"
-    yellow:  "#7a7a7a"
-    blue:    "#8a8a8a"
-    magenta: "#9a9a9a"
-    cyan:    "#aaaaaa"
-    white:   "#cfcfcf"
+[colors.primary]
+background = "#111214"   # deep graphite
+foreground = "#d0d0d0"   # light gray
 
-  bright:
-    black:   "#2a2b2e"
-    red:     "#6a6a6a"
-    green:   "#7a7a7a"
-    yellow:  "#8a8a8a"
-    blue:    "#9a9a9a"
-    magenta: "#aaaaaa"
-    cyan:    "#bcbcbc"
-    white:   "#e0e0e0"
+[colors.cursor]
+text = "#111214"
+cursor = "#b0b0b0"
+
+[colors.selection]
+text = "#111214"
+background = "#4a4a4a"
+
+[colors.normal]
+black   = "#1a1b1e"
+red     = "#5a5a5a"
+green   = "#6a6a6a"
+yellow  = "#7a7a7a"
+blue    = "#8a8a8a"
+magenta = "#9a9a9a"
+cyan    = "#aaaaaa"
+white   = "#cfcfcf"
+
+[colors.bright]
+black   = "#2a2b2e"
+red     = "#6a6a6a"
+green   = "#7a7a7a"
+yellow  = "#8a8a8a"
+blue    = "#9a9a9a"
+magenta = "#aaaaaa"
+cyan    = "#bcbcbc"
+white   = "#e0e0e0"
