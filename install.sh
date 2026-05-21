@@ -13,4 +13,6 @@ ln -s -T ~/dotfiles/alacritty/alacritty.toml  ~/.config/alacritty/alacritty.toml
 ln -s -T ~/dotfiles/kitty/current-theme.conf ~/.config/kitty/current-theme.conf
 ln -s -T ~/dotfiles/picom/picom.conf ~/.config/picom/picom.conf
 
+ln -s -T ~/dotfiles/vim ~/.vimrc
 
+echo exec i3 >> ~/.xinitrc
