@@ -19,6 +19,7 @@ ln -s -T ~/dotfiles/tmux/tmux.conf ~/.config/tmux/tmux.conf
 rm ~/.vimrc
 ln -s -T ~/dotfiles/vim ~/.vimrc
 
+rm ~/.bashrc
+ln -s -T ~/dotfiles/bash ~/.bashrc
 echo exec i3 >> ~/.xinitrc
-cat ~/dotfiles/bash >> ~/.bashrc
 source ~/.bashrc
