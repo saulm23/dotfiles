@@ -1,9 +1,17 @@
 # ~/.config/alacritty/alacritty.toml
 
 
+[terminal]
+shell = "/bin/zsh"
 [font]
-size = 12
+size = 17
 normal = {family = "JetBrainsMonoNerdFont"}
+
+[cursor]
+vi_mode_style = {shape="Underline", blinking="On"}
+
+[mouse]
+hide_when_typing = true
 
 [colors.primary]
 background = "#000000"   # deep graphite
