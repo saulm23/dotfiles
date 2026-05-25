@@ -8,11 +8,8 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
-alias x=tmux
-alias e=exit
-alias t=date
-alias s='source ~/.bashrc'
 alias sga='sh ~/dotfiles/scripts/timer.sh'
 alias xcl='sh ~/dotfiles/scripts/xclip.sh'
-alias f=fastfetch
-f
+alias k='history > ~/.bash_history1; tmux kill-session'
+alias h='nvim ~/.bash_history1'
+fastfetch

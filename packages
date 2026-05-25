@@ -24,4 +24,6 @@ wget
 zip
 zsh
 mpv
+tmux
+neovim
 fastfetch
