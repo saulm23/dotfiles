@@ -3,7 +3,6 @@ xorg-xinit
 xorg-xrandr
 dmenu
 i3
-kitty
 zathura-pdf-mupdf
 firefox
 git
@@ -21,7 +20,6 @@ pipewire-jack
 sof-firmware
 xclip
 openssh
-tmux
 wget
 zip
 zsh

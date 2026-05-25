@@ -14,3 +14,5 @@ alias t=date
 alias s='source ~/.bashrc'
 alias sga='sh ~/dotfiles/scripts/timer.sh'
 alias xcl='sh ~/dotfiles/scripts/xclip.sh'
+alias f=fastfetch
+f
