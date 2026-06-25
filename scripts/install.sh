@@ -15,18 +15,18 @@ mkdir -p ~/.config/tmux
 mkdir -p ~/.config/nvim
 mkdir -p ~/screenshots
 
-ln -s -T ~/dotfiles/i3/config ~/.config/i3/config
-ln -s -T ~/dotfiles/i3/i3status.conf ~/.config/i3status/config
-ln -s -T ~/dotfiles/alacritty/alacritty.toml  ~/.config/alacritty/alacritty.toml
-ln -s -T ~/dotfiles/picom/picom.conf ~/.config/picom/picom.conf
-ln -s -T ~/dotfiles/tmux/tmux.conf ~/.config/tmux/tmux.conf
-ln -s -T ~/dotfiles/nvim/init.lua ~/.config/nvim/init.lua
+ln -s -T ~/d/i3/config ~/.config/i3/config
+ln -s -T ~/d/i3/i3status.conf ~/.config/i3status/config
+ln -s -T ~/d/alacritty/alacritty.toml  ~/.config/alacritty/alacritty.toml
+ln -s -T ~/d/picom/picom.conf ~/.config/picom/picom.conf
+ln -s -T ~/d/tmux/tmux.conf ~/.config/tmux/tmux.conf
+ln -s -T ~/d/nvim/init.lua ~/.config/nvim/init.lua
 
 rm ~/.vimrc
-ln -s -T ~/dotfiles/vim ~/.vimrc
+ln -s -T ~/d/vim ~/.vimrc
 
 rm ~/.bashrc
-ln -s -T ~/dotfiles/bash ~/.bashrc
+ln -s -T ~/d/bash ~/.bashrc
 
 echo exec i3 > ~/.xinitrc
 

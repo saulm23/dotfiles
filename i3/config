@@ -55,7 +55,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+#bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show drun
+
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -164,6 +166,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	#position top
         status_command i3status
 	colors{
 	        background #000000
@@ -179,13 +182,15 @@ bar {
 }
 ##MIS MODIFICACIONES
 #status
-exec --no-startup-id i3status -c ~/dotfiles/i3status/config
+exec --no-startup-id i3status -c ~/d/i3status/config
 #brightness
 bindsym XF86MonBrightnessUp exec brightnessctl set +10% 
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+exec --no-startup-id brightnessctl set 30%
+
 #grayscale
-exec picom --backend glx --window-shader-fg ~/dotfiles/picom/grayscale.glsl
-bindsym $mod+g exec picom --backend glx --window-shader-fg ~/dotfiles/picom/grayscale.glsl 
+exec picom --backend glx --window-shader-fg ~/d/picom/grayscale.glsl
+bindsym $mod+g exec picom --backend glx --window-shader-fg ~/d/picom/grayscale.glsl 
 #gaps
 #gaps inner 10px
 #gaps outer 10px
@@ -193,12 +198,12 @@ bindsym $mod+g exec picom --backend glx --window-shader-fg ~/dotfiles/picom/gray
 #workspace 3 gaps outer 15px
 default_border pixel
 #touchpad
-bindsym $mod+t exec --no-startup-id xinput disable $(xinput | grep Touchpad | grep -o 'id=[0-9]*' | cut -d= -f2) 
 bindsym $mod+Shift+t exec --no-startup-id xinput disable $(xinput | grep TrackPoint | grep -o 'id=[0-9]*' | cut -d= -f2) 
 exec --no-startup-id xinput disable $(xinput | grep Touchpad | grep -o 'id=[0-9]*' | cut -d= -f2)
 #exec --no-startup-id xinput disable $(xinput | grep TrackPoint | grep -o 'id=[0-9]*' | cut -d= -f2)
 #app shortchuts
-bindsym $mod+z exec zathura ~/b/aops1F.pdf
+bindsym $mod+z exec zathura 
+bindsym $mod+b exec firefox
 bindsym $mod+o exec i3lock 
 #screenshots
 bindsym $mod+x exec scrot -s ~/screenshots/%m-%d-%T.png
@@ -210,3 +215,4 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #808080 #808080 #ffffff #808080   #808080
 client.background       #ffffff
 #
+exec --no-startup-id xfce4-power-manager
