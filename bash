@@ -12,4 +12,5 @@ alias sga='sh ~/d/scripts/timer.sh'
 alias xcl='sh ~/d/scripts/xclip.sh'
 alias k='history > ~/.bash_history1; tmux kill-session'
 alias h='nvim ~/.bash_history1'
+alias p='date; acpi'
 fastfetch
