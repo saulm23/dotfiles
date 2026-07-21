@@ -14,3 +14,4 @@ alias k='history > ~/.bash_history1; tmux kill-session'
 alias h='nvim ~/.bash_history1'
 alias p='date; acpi'
 fastfetch
+p
