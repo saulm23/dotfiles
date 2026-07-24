@@ -10,8 +10,7 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 alias sga='sh ~/d/scripts/timer.sh'
 alias xcl='sh ~/d/scripts/xclip.sh'
-alias k='history > ~/.bash_history1; tmux kill-session'
-alias h='nvim ~/.bash_history1'
 alias p='date; acpi'
+alias v="vim -c 'h user-manual|only'"
 fastfetch
 p
