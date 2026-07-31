@@ -15,7 +15,7 @@ mkdir -p ~/.config/i3status
 mkdir -p ~/.config/nvim
 mkdir -p ~/.config/kitty
 mkdir -p ~/screenshots
-mkdir -p ~/tmux
+mkdir -p ~/.config/tmux
 
 ln -s -T ~/d/i3/config ~/.config/i3/config
 ln -s -T ~/d/i3/i3status.conf ~/.config/i3status/config
