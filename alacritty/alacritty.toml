@@ -1,0 +1,8 @@
+[font]
+normal = { family = "JetBrainsMono"}
+size = 15.0
+[terminal]
+shell = { program = "/bin/zsh"}
+[colors]
+primary.foreground = "#FFFFFF"
+primary.background = "#000000"
