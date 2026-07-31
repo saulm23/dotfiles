@@ -50,6 +50,7 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec kitty
+bindsym $mod+M exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
