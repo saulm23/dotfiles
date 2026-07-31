@@ -23,7 +23,7 @@ ln -s -T ~/d/kitty/kitty.conf  ~/.config/kitty/kitty.conf
 ln -s -T ~/d/alacritty/alacritty.toml  ~/.config/alacritty/alacritty.toml
 ln -s -T ~/d/picom/picom.conf ~/.config/picom/picom.conf
 ln -s -T ~/d/nvim/init.lua ~/.config/nvim/init.lua
-ln -s ~/d/tmux/tmux.conf
+ln -s -T ~/d/tmux/tmux.conf ~/.config/tmux/tmux.conf
 
 rm ~/.vimrc
 ln -s -T ~/d/vim ~/.vimrc
