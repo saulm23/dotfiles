@@ -14,3 +14,5 @@ alias p='date; acpi'
 alias v="vim -c 'h user-manual|only'"
 fastfetch
 p
+export MANPAGER="vim -M +MANPAGER -"
+
