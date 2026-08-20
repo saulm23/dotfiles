@@ -1,7 +1,3 @@
--- Numbers
-vim.opt.number = true
-vim.opt.relativenumber = true
-
 -- Hide bottom/status bar
 vim.opt.laststatus = 0
 vim.opt.showmode = true
@@ -13,16 +9,14 @@ vim.opt.smartindent = false
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
--- Pure black & white theme
-vim.cmd([[
-  highlight Normal guibg=#000000 guifg=#FFFFFF
-  highlight CursorLine guibg=#111111
-  highlight LineNr guifg=#666666
-  highlight CursorLineNr guifg=#FFFFFF gui=bold
+vim.opt.termguicolors = true
+vim.opt.background = "dark"
 
-  highlight Visual guibg=#222222
-  highlight Search guibg=#FFFFFF guifg=#000000
+vim.opt.cursorline = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 
-  highlight StatusLine guibg=#000000 guifg=#000000
-  highlight VertSplit guifg=#222222
-]])
+vim.opt.signcolumn = "yes"
+vim.opt.showmode = false
+vim.opt.laststatus = 3
+
