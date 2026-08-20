@@ -1,8 +1,40 @@
 [font]
-normal = { family = "JetBrainsMono"}
+normal = { family = "JetBrainsMono" }
 size = 9.0
+
 [terminal]
-shell = { program = "/bin/zsh"}
-[colors]
-primary.foreground = "#FFFFFF"
-primary.background = "#000000"
+shell = { program = "/bin/zsh" }
+
+
+[colors.primary]
+background = "#050505"
+foreground = "#B8B8B8"
+
+[colors.cursor]
+text = "#050505"
+cursor = "#66D9EF"
+
+[colors.selection]
+text = "#FFFFFF"
+background = "#164A5C"
+
+[colors.normal]
+black   = "#080808"
+red     = "#888888"
+green   = "#A0A0A0"
+yellow  = "#B0B0B0"
+blue    = "#888888"
+magenta = "#999999"
+cyan    = "#55D6FF"
+white   = "#D0D0D0"
+
+[colors.bright]
+black   = "#303030"
+red     = "#AAAAAA"
+green   = "#B8B8B8"
+yellow  = "#C0C0C0"
+blue    = "#AAAAAA"
+magenta = "#B0B0B0"
+cyan    = "#7DE3FF"
+white   = "#F0F0F0"
+
